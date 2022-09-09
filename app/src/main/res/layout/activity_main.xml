@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@color/cream_100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHeading"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@color/purple_200"
+            android:text="UNIT CONVERSION"
+            android:textAlignment="center"
+            android:textColor="@color/dark_pink"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/spnMeasurement"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_spinner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="190dp"
+            tools:ignore="MissingConstraints">
+
+            <Spinner
+                android:layout_width="120dp"
+                android:id="@+id/spnTypeOne"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="match_parent" />
+
+
+            <EditText
+                android:layout_width="294dp"
+                android:layout_height="70dp"
+                android:id="@+id/txtNumberToBeConverted"
+                android:background="@color/white"
+                android:hint="Enter the Number"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dark_pink"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="280dp"
+            android:layout_marginTop="12dp"
+            tools:ignore="MissingConstraints">
+
+            <Spinner
+                android:layout_width="120dp"
+                android:id="@+id/spnTypeTwo"
+                android:textSize="15dp"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:text="Output "
+                android:textAlignment="center"
+                android:textColor="@color/dark_pink"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ADD QUALITY"
+            android:id="@+id/btnAddQuality"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="412dp"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btnConvertQuality"
+            android:text="CONVERT QUALITY"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="480dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</layout>
+
+
+
