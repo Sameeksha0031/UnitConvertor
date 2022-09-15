@@ -95,7 +95,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="ADD QUALITY"
+            android:text="ADD QUANTITY"
             android:id="@+id/btnAddQuality"
             android:textAlignment="center"
             android:textSize="20sp"
